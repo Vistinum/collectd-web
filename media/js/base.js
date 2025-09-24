@@ -151,6 +151,7 @@ function build_url(original_url, new_params) {
         }
     }
     Fb.log(url,"info");
+    if (url[0] === '/') url = '.' + url; // Make it work under a directory
     return url;
 }
 
